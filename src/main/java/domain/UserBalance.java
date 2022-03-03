@@ -3,7 +3,7 @@ package domain;
 public class UserBalance {
     private static final String INVALID_BALANCE_EXCEPTION_MESSAGE = "구입금액은 1000원 이상이어야 하며 1000원 미만일 수 없습니다.";
     private static final String INVALID_LOTTO_COUNT_EXCEPTION_MESSAGE = "수동 입력 가능 횟수는 0번 이상 최대 구입 가능 이하여야 합니다.";
-    public static final int LOTTO_PRICE = 1000;
+    private static final int LOTTO_PRICE = 1000;
 
     private final int userBalance;
     private final int manualLottoCount;

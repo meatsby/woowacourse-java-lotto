@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class LottoTicket {
+
     private static final int LOTTO_SIZE = 6;
     private static final String INVALID_SIZE_EXCEPTION_MESSAGE = "6개의 당첨 번호를 입력해야 합니다.";
     private static final String DUPLICATE_WINNING_NUMBER_EXCEPTION_MESSAGE = "당첨 번호는 중복될 수 없습니다.";

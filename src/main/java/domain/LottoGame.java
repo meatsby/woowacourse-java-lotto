@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class LottoGame {
 
-    public static final int ADDITION = 1;
+    private static final int ADDITION = 1;
 
     private final LottoTickets lottoTickets;
     private final WinningLotto winningLotto;
