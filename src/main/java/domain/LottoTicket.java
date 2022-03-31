@@ -31,12 +31,11 @@ public class LottoTicket {
     }
 
     public static LottoTicket createManualLotto(List<LottoNumber> lottoNumbers) {
-        validateSize(lottoNumbers);
         Collections.sort(lottoNumbers);
         return new LottoTicket(lottoNumbers);
     }
 
-    private static void validateSize(List<LottoNumber> lottoNumbers) {
+    private void validateSize(List<LottoNumber> lottoNumbers) {
         if (lottoNumbers.size() != LOTTO_SIZE) {
             throw new IllegalArgumentException(INVALID_SIZE_EXCEPTION_MESSAGE);
         }
